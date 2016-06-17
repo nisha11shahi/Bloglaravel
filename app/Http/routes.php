@@ -18,4 +18,9 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/content', 'PostController@save');
+Route::post('/content', 'PostController@store');
+Route::get('/post ', 'PostController@showall');
+Route::get('delete/{delete}','PostController@destroy')->name('posts.delete');
+Route::get('view/{view}','PostController@viewPost')->name('posts.view');
+Route::post('/addcomment', 'CommentController@addcomment');
+Route::get('/comment', 'CommentController@viewcomment');

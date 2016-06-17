@@ -48,9 +48,9 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/home') }}">Posts</a></li>
-                    <li><a href="{{ url('/home') }}">Comments</a></li>
-                    <li><a href="{{ url('/home') }}">Users</a></li>
+                    <li><a href="{{ url('/post') }}">Posts</a></li>
+                    <li><a href="{{ url('/comment') }}">Comments</a></li>
+                    <li><a href="{{ url('/user') }}">Users</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
